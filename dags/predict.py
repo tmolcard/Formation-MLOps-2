@@ -28,7 +28,7 @@ def predict():
         predict_with_io(features_path=feature_path, model_path=MODEL_PATH, predictions_folder=PREDICTIONS_FOLDER)
 
     features_path = prepare_features_with_io_task()
-    predict_model_task(feature_path=feature_path)
+    predict_model_task(feature_path=features_path)
 
 
 predict_dag = predict()
