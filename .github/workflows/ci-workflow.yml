@@ -24,6 +24,6 @@ jobs:
       - name: Run Vulture
         run:  vulture
       - name: Run tests
-        run:  pytest ./tests
+        run:  make tests
 
 
