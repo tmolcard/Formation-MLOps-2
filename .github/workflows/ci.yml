@@ -24,6 +24,8 @@ jobs:
       - name: Run Vulture
         run: vulture formation_indus_ds_avancee scripts --min-confidence 100
       - name: Run tests
-        run: python -m pytest tests/test_unit
+        run: make tests
+      - name: Display pyramide
+        run: ./tests/tests_pyramid.sh
       # Add behave command
 
